@@ -1,7 +1,7 @@
 # Passport-Yahoo-OAuth
 
 [Passport](https://github.com/jaredhanson/passport) strategies for
-authenticating with Yahoo! using the OAuth 1.0a API.
+authenticating with [Yahoo!](http://www.yahoo.com/) using the OAuth 1.0a API.
 
 ## Installation
 
@@ -58,6 +58,8 @@ For a complete, working example, refer to the [login example](https://github.com
 
     $ npm install --dev
     $ make test
+
+[![Build Status](https://secure.travis-ci.org/jaredhanson/passport-yahoo-oauth.png)](http://travis-ci.org/jaredhanson/passport-yahoo-oauth)
 
 ## Credits
 

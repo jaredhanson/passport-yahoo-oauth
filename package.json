@@ -1,7 +1,7 @@
 {
   "name": "passport-yahoo-oauth",
   "version": "0.1.0",
-  "description": "Yahoo! (OAuth 1.0) authentication strategy for Passport.",
+  "description": "Yahoo! (OAuth) authentication strategy for Passport.",
   "author": { "name": "Jared Hanson", "email": "jaredhanson@gmail.com", "url": "http://www.jaredhanson.net/" },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "devDependencies": {
     "vows": "0.6.x"
+  },
+  "scripts": {
+    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
   },
   "engines": { "node": ">= 0.4.0" },
   "licenses": [ {

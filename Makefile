@@ -10,7 +10,7 @@ docs: docs/api.html
 docs/api.html: lib/passport-yahoo-oauth/*.js
 	dox \
 		--title Passport-Yahoo-OAuth \
-		--desc "Yahoo! (OAuth 1.0) authentication strategy for Passport" \
+		--desc "Yahoo! (OAuth) authentication strategy for Passport" \
 		$(shell find lib/passport-yahoo-oauth/* -type f) > $@
 
 docclean:
