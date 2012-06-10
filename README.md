@@ -43,12 +43,18 @@ application:
         // function will not be called.
       });
 
-    app.get('/auth/yahoo/callback', 
+    app.get('/auth/yahoo/callback',
       passport.authenticate('yahoo', { failureRedirect: '/login' }),
       function(req, res) {
         // Successful authentication, redirect home.
         res.redirect('/');
       });
+
+## Note regarding common "401 Unauthorized" request error
+
+If you receive this error, it is most likely because you have not yet specified
+any application "Permissions".  Once you do so, Yahoo! will generate new
+credentials for usage, and will then authenticate your requests properly.
 
 ## Examples
 
