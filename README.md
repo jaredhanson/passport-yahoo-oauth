@@ -50,15 +50,16 @@ application:
         res.redirect('/');
       });
 
-## Note regarding common "401 Unauthorized" request error
-
-If you receive this error, it is most likely because you have not yet specified
-any application "Permissions".  Once you do so, Yahoo! will generate new
-credentials for usage, and will then authenticate your requests properly.
-
 ## Examples
 
 For a complete, working example, refer to the [login example](https://github.com/jaredhanson/passport-yahoo/tree/master/examples/login).
+
+## Issues
+
+If you receive a `401 Unauthorized` error, it is most likely because you have
+not yet specified any application "Permissions".  Once you do so, Yahoo! will
+generate new credentials for usage, and will then authenticate your requests
+properly.
 
 ## Tests
 
