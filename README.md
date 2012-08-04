@@ -1,7 +1,13 @@
 # Passport-Yahoo-OAuth
 
-[Passport](https://github.com/jaredhanson/passport) strategies for
-authenticating with [Yahoo!](http://www.yahoo.com/) using the OAuth 1.0a API.
+[Passport](http://passportjs.org/) strategies for authenticating with [Yahoo!](http://www.yahoo.com/)
+using the OAuth 1.0a API.
+
+This module lets you authenticate using Yahoo! in your Node.js applications.
+By plugging into Passport, Yahoo! authentication can be easily and
+unobtrusively integrated into any application or framework that supports
+[Connect](http://www.senchalabs.org/connect/)-style middleware, including
+[Express](http://expressjs.com/).
 
 ## Installation
 
