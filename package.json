@@ -2,7 +2,7 @@
   "name": "passport-yahoo-oauth",
   "version": "0.1.2",
   "description": "Yahoo! (OAuth) authentication strategy for Passport.",
-  "keywords": ["passport", "yahoo", "auth", "authn", "authentication", "identity"]
+  "keywords": ["passport", "yahoo", "auth", "authn", "authentication", "identity"],
   "repository": {
     "type": "git",
     "url": "git://github.com/jaredhanson/passport-yahoo-oauth.git"
