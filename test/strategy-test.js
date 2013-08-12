@@ -36,6 +36,20 @@ vows.describe('YahooStrategy').addBatch({
             "uri":"http:\/\/social.yahooapis.com\/v1\/user\/12345\/profile",   \
             "guid": "12345",   \
             "created": "2008-08-26T23:35:16Z",  \
+            "emails":  \
+            [  \
+              {  \
+                "handle": "pablo@example.com",  \
+                "id": 1,  \
+                "primary": true,  \
+                "type": "HOME"  \
+              },  \
+              {  \
+                "handle": "francisco@example.com",  \
+                "id": 2,  \
+                "type": "HOME"  \
+              }  \
+            ],  \
             "familyName": "Edgerton",   \
             "gender": "F",  \
             "givenName": "Samantha",  \
@@ -197,6 +211,13 @@ vows.describe('YahooStrategy').addBatch({
         assert.equal(profile.displayName, 'Samantha Edgerton');
         assert.equal(profile.name.familyName, 'Edgerton');
         assert.equal(profile.name.givenName, 'Samantha');
+        assert.lengthOf(profile.emails, 2);
+        assert.equal(profile.emails[0].value, "pablo@example.com");
+        assert.equal(profile.emails[0].type, "home");
+        assert.isTrue(profile.emails[0].primary);
+        assert.equal(profile.emails[1].value, "francisco@example.com");
+        assert.equal(profile.emails[1].type, "home");
+        assert.isUndefined(profile.emails[1].primary);
       },
       'should set raw property' : function(err, profile) {
         assert.isString(profile._raw);
