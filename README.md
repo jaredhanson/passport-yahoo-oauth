@@ -10,12 +10,17 @@ unobtrusively integrated into any application or framework that supports
 [Express](http://expressjs.com/).
 
 ## Installation
-
+    - Original version
     $ npm install passport-yahoo-oauth
+    - Forked version
+    $ npm install passport-yahoo-oauth2
 
 ## Usage
 
 #### Configure Strategy
+
+#### OAuth 1
+var YahooStrategy = require('passport-yahoo-oauth').Strategy;
 
 The Yahoo authentication strategy authenticates users using a Yahoo account
 and OAuth tokens.  The strategy requires a `verify` callback, which accepts
@@ -34,8 +39,8 @@ specifying a consumer key, consumer secret, and callback URL.
       }
     ));
 
-#### OAuth2
-var YahooStrategy = require('passport-yahoo-oauth').OAuth2Strategy;
+#### OAuth2 (forked version)
+var YahooStrategy = require('passport-yahoo-oauth2').OAuth2Strategy;
 
     passport.use(new YahooStrategy({
         consumerKey: YAHOO_CONSUMER_KEY,
