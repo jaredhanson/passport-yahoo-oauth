@@ -89,6 +89,8 @@ properly.
 ## Credits
 
   - [Jared Hanson](http://github.com/jaredhanson)
+  - [Sahat Yalkabov](https://twitter.com/EvNowAndForever)
+  - [Eugene Obrezkov](https://github.com/ghaiklor)
 
 ## License
 
