@@ -34,7 +34,7 @@
   ],
   "main": "./lib/passport-yahoo-oauth",
   "dependencies": {
-    "passport-oauth": "0.1.x",
+    "passport-oauth2": "^1.4.0",
     "pkginfo": "0.2.x",
     "request": "^2.56.0"
   },
