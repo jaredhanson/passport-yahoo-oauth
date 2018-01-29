@@ -1,28 +1,42 @@
 {
-  "name": "passport-yahoo-oauth",
-  "version": "0.1.2",
-  "description": "Yahoo! (OAuth) authentication strategy for Passport.",
-  "keywords": ["passport", "yahoo", "auth", "authn", "authentication", "identity"],
+  "name": "passport-yahoo-oauth2",
+  "version": "0.2.6",
+  "description": "This is a forked version of Yahoo passport! (OAuth1 and OAuth2) authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "yahoo",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/passport-yahoo-oauth.git"
+    "url": "git://github.com/francisalvinbarretto/passport-yahoo-oauth.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-yahoo-oauth/issues"
+    "url": "http://github.com/francisalvinbarretto/passport-yahoo-oauth/issues"
   },
   "author": {
     "name": "Jared Hanson",
     "email": "jaredhanson@gmail.com",
     "url": "http://www.jaredhanson.net/"
   },
-  "licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT" 
-  } ],
+  "contributors": {
+    "name": "Francis Alvin Barretto",
+    "email": "francis.alvin.barretto@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "main": "./lib/passport-yahoo-oauth",
   "dependencies": {
+    "passport-oauth2": "^1.4.0",
     "pkginfo": "0.2.x",
-    "passport-oauth": "0.1.x"
+    "request": "^2.56.0"
   },
   "devDependencies": {
     "vows": "0.6.x"
@@ -30,5 +44,7 @@
   "scripts": {
     "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
   },
-  "engines": { "node": ">= 0.4.0" }
+  "engines": {
+    "node": ">= 0.4.0"
+  }
 }
