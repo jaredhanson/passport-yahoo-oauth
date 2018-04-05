@@ -1,6 +1,6 @@
 {
   "name": "passport-yahoo-oauth",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Yahoo! (OAuth) authentication strategy for Passport.",
   "keywords": ["passport", "yahoo", "auth", "authn", "authentication", "identity"],
   "repository": {
