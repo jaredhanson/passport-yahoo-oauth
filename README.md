@@ -1,5 +1,13 @@
 # Passport-Yahoo-OAuth
 
+| Notice (October 2022):       |
+| :------------- |
+| This module was designed for a previous version of Yahoo! OAuth API (v1.0a) and is no longer compatible with the current version of Yahoo! OAuth API (v2.0). A working alternative is to use [passport-oauth2](https://github.com/jaredhanson/passport-oauth2), configured to [Yahoo! OAuth API (v2.0) specifications](https://developer.yahoo.com/sign-in-with-yahoo/). Example code can be found [here](https://github.com/jaredhanson/passport-yahoo-oauth/tree/master/examples/example-oauth2). |
+
+---
+### Original README:
+---
+
 [Passport](http://passportjs.org/) strategies for authenticating with [Yahoo!](http://www.yahoo.com/)
 using the OAuth 1.0a API.
 
